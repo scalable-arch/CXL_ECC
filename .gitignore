@@ -1,0 +1,9 @@
+# Binaries
+Fault_sim_start
+
+# Simulation Results
+*.S
+
+# Temporary files
+*.o
+.DS_Store

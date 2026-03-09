@@ -36,7 +36,6 @@ The simulation targets a single 32-bit sub-channel, which typically contains 10 
 1.  **Fault Injection**: The simulator injects a "Single Chip Error (SCE)" where an entire chip's output is corrupted.
 2.  **Algorithm Recovery**: Our RL-ECC algorithm identifies the failed chip's position and restores the lost data using the redundant symbols.
 3.  **Result Verification**: If the simulation reports **CE = 100%**, it confirms that the sub-channel is immune to a single chip failure.
-4.  **Final Logic**: Protecting 1 chip per sub-channel × 2 sub-channels = **2-chip error correction for the whole DIMM**.
 
 ---
 

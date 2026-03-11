@@ -44,11 +44,11 @@ The simulation targets a single 32-bit sub-channel, which typically contains 10 
 | File Name | Functional Role |
 | :--- | :--- |
 | **`Fault_sim.cpp`** | The core C++ engine that performs error injection and executes the decoding algorithm to measure CE, DUE, and SDC ratios. |
-| **`run.py`** | A Python automation script that uses `multiprocessing` to run multiple error scenarios in parallel, optimizing simulation time. |
+| **`run.py`** | A Python automation script to run multiple error scenarios in parallel. |
 | **`run.sh`** | The master shell script that handles the end-to-end pipeline: cleanup, compilation, execution, and final PASS/FAIL verification. |
-| **`Makefile`** | Defines the build process using `g++` with `-O2` optimization for high-speed simulation performance. |
+| **`Makefile`** | Defines the build process using `g++`. |
 | **`GF_2^8__...txt`** | Required configuration file for Galois Field $GF(2^8)$ arithmetic tables. |
-| **`H_Matrix_SEC.txt`** | Required file containing the parity-check matrix for baseline On-Die ECC (SEC) comparison. |
+| **`H_Matrix_SEC.txt`** | Required file containing the parity-check matrix. |
 
 ---
 
